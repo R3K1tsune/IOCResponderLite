@@ -1,0 +1,74 @@
+#
+# Uncomment the required blocks
+#
+# =============================
+#
+services:
+#  ipinfo:
+#    api_key: ""
+#    base_url: "https://ipinfo.io/"
+#    headers:
+#      Authorization: "Bearer"
+#      Content-Type: "application/json"
+#  vt:
+#    api_key: ""
+#    base_url: "https://www.virustotal.com/api/v3"
+#    file_url: "/files/"
+#    domain_url: "/domains/"
+#    ip_url: "/ip_addresses/"
+#    headers:
+#      x-apikey: "{api_key}"
+#    sleep: "12"
+#  opentip:
+#    api_key: ""
+#    base_url: "https://opentip.kaspersky.com/api/v1"
+#    file_url: "/search/hash?request="
+#    domain_url: "/search/domain?request="
+#    ip_url: "/search/ip?request=" 
+#    headers:
+#      x-api-key: "{api_key}"
+#      Content-Type: "application/json"
+#  ha:
+#    api_key: ""
+#    base_url: "https://hybrid-analysis.com/api/v2"
+#    file_url: "/overview/"
+#    headers:
+#      api-key: "{api_key}"
+#      accept: "application/json"
+#  censys:
+#    api_key: ""
+#    base_url: "https://api.platform.censys.io/v3"
+#    ip_url: "/global/asset/host/"
+#    headers:
+#      Authorization: "Bearer {api_key}"
+#      Accept: application/vnd.censys.api.v3.host.v1+json
+#  greynoise:
+#    api_key: ""
+#    base_url: "https://api.greynoise.io/v3/community/"
+#    headers:
+#      key: "{api_key}"
+#  abuseipdb:
+#    api_key: ""
+#    base_url: "https://api.abuseipdb.com/api/v2"
+#    ip_url: "/check"
+#    days: "30"
+#    headers:
+#      Key: "{api_key}"
+#      Accept: "application/json"
+#  avotx:
+#    api_key: ""
+#    base_url: "https://otx.alienvault.com/api/v1/indicators"
+#    ip_url: "/IPv4/"
+#    file_url: "/file/"
+#    domain_url: "/domain/"
+#    headers:
+#      Key: "{api_key}"
+#      Accept: "application/json"
+#  shodan:
+#    api_key: ""
+#    base_url: "https://api.shodan.io/shodan/host"
+#    ip_url: "/"
+#    domain_url: "/search"
+#  opencti:
+#    api_key: ""
+#    base_url: "https://<your_domain>/graphql"
