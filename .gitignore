@@ -3,5 +3,7 @@
 .env
 .DS_Store
 *.pyc
+*.egg-info
 __pycache__/
 venv/
+dist
