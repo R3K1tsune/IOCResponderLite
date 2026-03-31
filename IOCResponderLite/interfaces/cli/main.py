@@ -9,7 +9,7 @@ from IOCResponderLite.core.classes import *
 def main():
     parser = argparse.ArgumentParser(description='IOC Responder Lite\n'
                                             'CLI-utility for checking IOC`s (MD5, SHA1, SHA256, IP addresses and domains on various platforms)\n'
-                                            'Author: R3狐 (R3K)\nVersion: 1.0.0\n\n'
+                                            'Author: R3狐 (R3K)\nVersion: 1.0.1\n\n'
                                             'Support online platforms:\n'
                                             '|-------------------------------------------------------|\n'
                                             '| Key       | Description                               |\n'

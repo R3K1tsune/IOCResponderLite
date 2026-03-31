@@ -2,7 +2,7 @@ import sys, colorama, yaml, textwrap
 import IOCResponderLite.core.functions
 
 def Banner():
-    print(f'{colorama.Fore.MAGENTA} _____ _____ _____    _____                       _ \n|     |     |     |  | __  |___ ___ ___ ___ ___ _| |___ ___ \n||   || ||| |   |||  |    -| -_|_ -| . | . |   | . | -_|  _|\n|_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|\n                      by {colorama.Fore.CYAN}R3狐 (R3K){colorama.Fore.MAGENTA}|_|{colorama.Fore.MAGENTA}LITE          1.0.0{colorama.Fore.RESET}\n', end='\n')
+    print(f'{colorama.Fore.MAGENTA} _____ _____ _____    _____                       _ \n|     |     |     |  | __  |___ ___ ___ ___ ___ _| |___ ___ \n||   || ||| |   |||  |    -| -_|_ -| . | . |   | . | -_|  _|\n|_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|\n                      by {colorama.Fore.CYAN}R3狐 (R3K){colorama.Fore.MAGENTA}|_|{colorama.Fore.MAGENTA}LITE          1.0.1{colorama.Fore.RESET}\n', end='\n')
 
 def OpenConfig(Path):
     with open(Path,'r', encoding='utf-8') as YAML:

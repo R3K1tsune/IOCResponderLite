@@ -6,7 +6,7 @@
 |_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|
                                    |_|LITE
 ```
-Version: `1.0.0`
+Version: `1.0.1`
 CLI-utility for checking IOC's on various online platforms with use API
 ## Support types of IOC's:
 - Hashes (**md5**, **sha256**, **sha1**)
@@ -29,11 +29,11 @@ CLI-utility for checking IOC's on various online platforms with use API
 
 # Install
 ```bash
-pip install iocresponderlite-1.0.0.tar.gz
+pip install iocresponderlite-1.0.1.tar.gz
 ```
 or
 ```bash
-pip install iocresponder-1.0.0-py3-none-any.whl
+pip install iocresponder-1.0.1-py3-none-any.whl
 ```
 # Usage
 ```bash

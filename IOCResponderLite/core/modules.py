@@ -58,7 +58,7 @@ def ha(module_config,url,checked_ioc):
             return hybridanalysis_result
 def opencti(module_config,url,checked_ioc):
     opencti_result = []
-    result = Request.OpenCTIRequest(module_config.get('base_url'),module_config.get('api_key'),checked_ioc.value)
+    result = Request.OpenCTIRequest(module_config.get('base_url'),module_config.get('api_key'),checked_ioc.value,checked_ioc.type)
     if result: 
         opencti_result = result
         return opencti_result

@@ -49,16 +49,21 @@ def ApiRequest(service_name: str,
             'message': str(error)
         }
 
-def OpenCTIRequest(server,token,ioc):
+def OpenCTIRequest(server,token,ioc,type):
     try:
         client = OpenCTIApiClient(server,token,ssl_verify=False) # if a self-signed certificate is used
     except:
         return
+    if type == 'file':
+        if len(ioc) == 32: key = 'hashes.MD5'
+        elif len(ioc) == 40: key = 'hashes.SHA-1'
+        elif len(ioc) == 64: key = 'hashes.SHA-256'
+    elif type == 'ip' or type == 'domain': key = 'value'
     observable = client.stix_cyber_observable.read(
         filters={
             'mode': 'and',
             'filters': [{
-                'key': 'value',
+                'key': key,
                 'values': [ioc]}],
             'filterGroups': []
         }
