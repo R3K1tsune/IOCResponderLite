@@ -1,8 +1,8 @@
-import sys, colorama, yaml, textwrap
+import sys, colorama, yaml, textwrap, os
 import IOCResponderLite.core.functions
 
 def Banner():
-    print(f'{colorama.Fore.MAGENTA} _____ _____ _____    _____                       _ \n|     |     |     |  | __  |___ ___ ___ ___ ___ _| |___ ___ \n||   || ||| |   |||  |    -| -_|_ -| . | . |   | . | -_|  _|\n|_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|\n                      by {colorama.Fore.CYAN}R3狐 (R3K){colorama.Fore.MAGENTA}|_|{colorama.Fore.MAGENTA}LITE          1.0.1{colorama.Fore.RESET}\n', end='\n')
+    print(f'{colorama.Fore.MAGENTA} _____ _____ _____    _____                       _ \n|     |     |     |  | __  |___ ___ ___ ___ ___ _| |___ ___ \n||   || ||| |   |||  |    -| -_|_ -| . | . |   | . | -_|  _|\n|_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|\n                      by {colorama.Fore.CYAN}R3狐 (R3K){colorama.Fore.MAGENTA}|_|{colorama.Fore.MAGENTA}LITE          1.0.2{colorama.Fore.RESET}\n', end='\n')
 
 def OpenConfig(Path):
     with open(Path,'r', encoding='utf-8') as YAML:
@@ -74,7 +74,7 @@ def ColourOutput(string):
 
 def CreateFileOutput(object,file_path,file_name):
     try:
-        with open(file_path+'\\'+file_name+'.json','w+', encoding='utf-8') as output_file:
+        with open(os.path.join(file_path, f'{file_name}.json'), 'w+', encoding='utf-8') as output_file:
             output_file.write(object)
     except Exception as Error:
         print(f'Error with create output file {file_path}: {Error}')

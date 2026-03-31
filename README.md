@@ -6,7 +6,7 @@
 |_____|_____|_____|  |__|__|___|___|  _|___|_|_|___|___|_|
                                    |_|LITE
 ```
-Version: `1.0.1`
+Version: `1.0.2`
 CLI-utility for checking IOC's on various online platforms with use API
 ## Support types of IOC's:
 - Hashes (**md5**, **sha256**, **sha1**)
@@ -28,12 +28,31 @@ CLI-utility for checking IOC's on various online platforms with use API
 > U must have API-keys for use this tool
 
 # Install
+1. Download `.whl` or `.tar.gz` from **Releases**
+2. Install **venv**:
 ```bash
-pip install iocresponderlite-1.0.1.tar.gz
+python3 -m venv venv
+```
+3. Install package:
+```bash
+./venv/bin/pip install iocresponderlite-1.0.2-py3-none-any.whl
 ```
 or
 ```bash
-pip install iocresponder-1.0.1-py3-none-any.whl
+./venv/bin/pip install iocresponderlite-1.0.2.tar.gz
+```
+
+> [!NOTE]
+> If you need OpenCTI, you need install `pycti` package version for your OpenCTI instance, or change requirement in `pyproject.toml` and build from sources
+
+4. Download `settings.yml`, uncomment needed services and add your API keys:
+5. Check installation:
+```bash
+./venv/bin/IOCResponderLite -h
+```
+6. Enjoy:
+```bash
+./venv/bin/IOCResponderLite -c settings.yml -t "8.8.8[.]8"
 ```
 # Usage
 ```bash

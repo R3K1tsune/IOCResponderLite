@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "IOCResponderLite"
-version = "1.0.1"
+version = "1.0.2"
 description = "CLI-utility and backend-service for checking IOC's on various online platforms with use API"
 dependencies = ["requests>=2.32.5,<3.0",
                 "PyYAML>=6.0.3,<7.0",
